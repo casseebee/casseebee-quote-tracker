@@ -21,7 +21,7 @@ document.getElementById('date').max = today;
     let canDeleteQuotes = false;
 
     // Define the base path for image files
-    const basePath = 'G:/My Drive/T3/eSaaS/Mentoring/Quote website/Directory - Testing';
+    const basePath = 'https://github.com/casseebee/casseebee-quote-tracker/blob/main';
 
     // Define image paths for different individuals
     const imagePaths = {
