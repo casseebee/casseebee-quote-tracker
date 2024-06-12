@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quote Tracker</h1>
+        <form id="quote-form">
+            <label for="quote">Quote:</label>
+            <input type="text" id="quote" required>
+
+            <label for="who">Who:</label>
+            <select id="who" required>
+                <option value="">Select...</option>
+                <option value="Cassie">Cassie</option>
+                <option value="Sloly">Sloly</option>
+                <option value="Fliss">Fliss</option>
+                <option value="Lambo">Lambo</option>
+                <option value="Nat">Nat</option>
+                <option value="Kazia">Kazia</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required max="">
+
+            <label for="context">Context:</label>
+            <textarea id="context" rows="4"></textarea>
+
+            <label for="image">Upload Image (optional):</label>
+            <input type="file" id="image" accept="image/*">
+
+            <button type="submit">Submit Quote</button>
+        </form>
+
+        <form id="access-form">
+            <h2>Access all quotes</h2>
+            <label for="access-password">Enter password:</label>
+            <input type="password" id="access-password" placeholder="Enter password" required>
+            <button type="button" id="access-button">Access Quotes <span id="quote-counter">(0)</span></button>
+        </form>
+        
+        <div id="quote-list" class="hidden">
+            <!-- Add this button in your HTML markup -->
+            <button id="export-button" style="display: none;">Export Quotes</button>
+        </div>        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
